@@ -1,0 +1,21 @@
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#All logs
+logs
+*.log
+*.log.*
+*.log.*.*
+
+#All venvs
+.venv
+venv
+venv/*
+venv/
+venv/lib/
+venv/lib/python3.12
+venv/lib/python3.12/site-packages
+venv/lib/python3.12/site-packages/
