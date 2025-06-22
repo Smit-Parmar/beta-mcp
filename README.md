@@ -1,1 +1,1 @@
-# beta-mcp
+#MCP Server
