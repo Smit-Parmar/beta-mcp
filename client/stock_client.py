@@ -10,15 +10,6 @@ import asyncio
 
 async def main():
     connections = {
-        "math": {
-            "command": "python",
-            "args": ["server/math_server.py"],
-            "transport": "stdio",
-        },
-        "weather": {
-            "url": "http://localhost:8000/mcp",
-            "transport": "streamable_http",
-        },
         "stock": {
             "command": "python",
             "args": ["server/stock_server.py"],
@@ -37,19 +28,8 @@ async def main():
         model,tools
     )
 
-    math_response = await agent.ainvoke(
-        {"messages": [{"role": "user", "content": "what's (3 + 5) x 12?"}]}
-    )
-
-    print("Math response:", math_response['messages'][-1].content)
-
-    weather_response = await agent.ainvoke(
-        {"messages": [{"role": "user", "content": "what is the weather in California?"}]}
-    )
-    print("Weather response:", weather_response['messages'][-1].content)
-
     stock_response = await agent.ainvoke(
-        {"messages": [{"role": "user", "content": "what is the current stock price of AAPL?"}]}
+        {"messages": [{"role": "user", "content": "What is historical data of RELIANCE.NS in last 30 days? what was the highest price in the last 30 days?"}]}
     )
     print("Stock response:", stock_response['messages'][-1].content)
 
