@@ -9,4 +9,6 @@ dependencies = [
     "langchain-groq>=0.3.2",
     "langchain-mcp-adapters>=0.1.7",
     "langgraph>=0.4.8",
+    "pandas>=2.3.0",
+    "yfinance>=0.2.63",
 ]

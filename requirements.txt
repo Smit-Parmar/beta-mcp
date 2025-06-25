@@ -2,3 +2,5 @@ langchain-groq
 langchain-mcp-adapters
 fastmcp
 langgraph
+yfinance
+pandas
