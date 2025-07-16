@@ -1,7 +1,4 @@
-MCP Server
-
-#Generate readme.md for this project
-# MCP Server Project
+# MCP Server
 
 This project demonstrates the use of Model Context Protocol (MCP) servers with multiple transport types. It includes a math server using stdio transport and a weather server using HTTP transport, both integrated with a Groq-powered client.
 
